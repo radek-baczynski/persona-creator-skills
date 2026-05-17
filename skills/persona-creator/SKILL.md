@@ -187,6 +187,8 @@ For each approved persona:
 
 Each generated persona skill should include YAML frontmatter, persona snapshot, boundaries, evidence anchors, how to work, and output shape. See `references/persona-skill-template.md` for the complete template.
 
+Generated personas are **not** frozen snapshots. They keep a stable lens (who this person is, what they care about) and should still use `agent-browser` to crawl or explore whenever the user supplies a URL or asks to review a page.
+
 ## Quality bar
 
 A good run of this skill:
@@ -196,7 +198,7 @@ A good run of this skill:
 - ranks personas by priority
 - shows what is observed versus inferred
 - asks for approval before creating persona skills
-- creates skills reusable in later chats without repeating the whole webpage analysis
+- creates skills that keep a stable persona lens in later chats while still allowing crawl and exploration of new URLs when the user asks
 - keeps uncertainty visible
 
 ## Example requests
