@@ -1,0 +1,15 @@
+# Local test artifacts
+*.mp3
+klawiter.mp3
+*-feedback-*.md
+
+# Dev-only layout (do not publish)
+.agents/
+
+# User-generated persona skills (local factory output)
+.agents/skills/persona-*/
+.claude/skills/persona-*/
+skills/persona-*/
+!skills/persona-creator/
+
+.DS_Store
