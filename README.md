@@ -10,21 +10,6 @@ We’re bootstrappers building [Transcriptmate](https://transcriptmate.com) — 
 
 We open-sourced `persona-creator` so you can do the same for your product. See [examples/personas/](examples/personas/) for the cast we generated while pressure-testing Transcriptmate — including [persona-solo-creator](examples/personas/persona-solo-creator/).
 
-## persona-creator
-
-Browse a site, propose evidence-backed personas, and after your approval generate reusable `persona-*` research lenses for messaging, UX critique, positioning, and buyer research.
-
-**Use when:**
-
-- You have a product URL and want to know who it is really for
-- You want ICPs, buyer profiles, or audience hypotheses grounded in site evidence
-- You want reusable persona skills that keep the same buyer lens across later tasks—and can still crawl new pages when you ask
-
-**Example prompts:**
-
-- "Analyze `https://example.com` and tell me who would be most interested in this product."
-- "Browse this landing page, propose buyer personas, and after I approve them create reusable persona skills."
-- "Look at this SaaS page and make 3 personas I can use later for messaging research."
 
 ## How it works
 
@@ -95,6 +80,22 @@ sequenceDiagram
   Browser-->>Disk: Fresh page evidence
   Disk-->>You: Reaction in persona voice
 ```
+
+## persona-creator
+
+Browse a site, propose evidence-backed personas, and after your approval generate reusable `persona-*` research lenses for messaging, UX critique, positioning, and buyer research.
+
+**Use when:**
+
+- You have a product URL and want to know who it is really for
+- You want ICPs, buyer profiles, or audience hypotheses grounded in site evidence
+- You want reusable persona skills that keep the same buyer lens across later tasks—and can still crawl new pages when you ask
+
+**Example prompts:**
+
+- "Analyze `https://example.com` and tell me who would be most interested in this product."
+- "Browse this landing page, propose buyer personas, and after I approve them create reusable persona skills."
+- "Look at this SaaS page and make 3 personas I can use later for messaging research."
 
 ## Installation
 
