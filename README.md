@@ -179,6 +179,18 @@ Each skill in this repo is a folder under `skills/`:
 - `references/` — supporting docs (persona skill template)
 - `evals/` — eval cases for quality testing
 
+## Releases
+
+Versioning follows [Semantic Versioning](https://semver.org/). See [CHANGELOG.md](CHANGELOG.md) and [GitHub Releases](https://github.com/radek-baczynski/persona-creator-skills/releases).
+
+Pin a release when installing:
+
+```bash
+npx skills add radek-baczynski/persona-creator-skills@v1.0.0 --skill persona-creator -y
+```
+
+**Maintainers:** bump `VERSION`, update `CHANGELOG.md` under `[Unreleased]`, run `./scripts/release.sh <version>`, commit, then `git push && git push origin vX.Y.Z`. The [release workflow](.github/workflows/release.yml) publishes notes from the changelog.
+
 ## License
 
 MIT

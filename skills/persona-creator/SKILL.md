@@ -1,6 +1,8 @@
 ---
 name: persona-creator
 description: Create rich buyer or user personas from a real website, then turn approved personas into reusable persona-* skills. Use whenever the user wants personas, ICPs, customer segments, buyer profiles, or audience hypotheses from a URL. Also use when the user wants you to browse a site, crawl supporting pages, propose human-feeling personas, and generate reusable persona skills for research, messaging, testing, or critique.
+metadata:
+  version: "1.0.0"
 ---
 
 # persona-creator
