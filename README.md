@@ -39,8 +39,6 @@ Agent        [writes to your agent skills directory]
 
 ### Later — same persona, new page, crawl again
 
-Persona skills persist on your machine: same worldview, goals, and objections every time. When you point at a **new** URL, the persona can still browse and explore with `agent-browser`—you skip re-inventing who they are, not re-investigating the page.
-
 ```
 You          How would persona-engineering-manager react to our new pricing page?
                https://acme-scheduler.com/pricing-v2
