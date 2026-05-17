@@ -10,23 +10,6 @@ We’re bootstrappers building [Transcriptmate](https://transcriptmate.com) — 
 
 We open-sourced `persona-creator` so you can do the same for your product. See [examples/personas/](examples/personas/) for the cast we generated while pressure-testing Transcriptmate — including [persona-solo-creator](examples/personas/persona-solo-creator/).
 
-## Compatible agents
-
-Install with the [skills CLI](https://github.com/vercel-labs/skills) into any agent that supports the [Agent Skills](https://agentskills.io/) format, including:
-
-| Agent | `npx skills` flag |
-|-------|-------------------|
-| Cursor | `cursor` |
-| Claude Code | `claude-code` |
-| OpenCode | `opencode` |
-| Codex | `codex` |
-| Gemini CLI | `gemini-cli` |
-| GitHub Copilot | `github-copilot` |
-| Windsurf | `windsurf` |
-| Cline | `cline` |
-
-Dozens of others are supported too — see the [full agent list](https://github.com/vercel-labs/skills#supported-agents).
-
 ## persona-creator
 
 Browse a site, propose evidence-backed personas, and after your approval generate reusable `persona-*` research lenses for messaging, UX critique, positioning, and buyer research.
