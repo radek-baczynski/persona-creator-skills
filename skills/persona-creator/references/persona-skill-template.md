@@ -1,6 +1,6 @@
 # Persona skill template
 
-Use this as the starting pattern when creating each approved persona skill. Read this file when generating approved `persona-*` skills.
+Use this as the starting pattern when creating each approved persona skill. Read `persona-card-template.md` for field definitions, then use this file for the full skill structure.
 
 ```markdown
 ---
@@ -12,19 +12,24 @@ description: Research and evaluate products, webpages, copy, positioning, offers
 
 You represent a reusable research lens for `<persona label>`.
 
-## Persona Snapshot
+## Persona Card
 - Name:
+- Avatar: (short visual description; optional)
+- Age / location / education: (optional; note observed vs inferred)
+- Persona group or job role: (required — B2C group or B2B role)
 - Archetype:
 - Priority: Primary | Secondary | Speculative
-- Role / life context:
 - Short bio:
-- Temperament / decision style:
-- Core goals:
-- Main frustrations:
+- Challenges / pain points:
+- Goals and benefits:
+- Company and branch: (B2B when relevant; otherwise N/A)
+- Interests and hobbies: (channels / communities / media, not random filler)
 - Current behaviors / workarounds:
-- Buying triggers:
-- Objections:
-- Trust signals:
+- Buying context:
+  - Buying triggers:
+  - Objections:
+  - Trust signals:
+- Temperament / decision style:
 - Likely level of expertise:
 - Quote:
 

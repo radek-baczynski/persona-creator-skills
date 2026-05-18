@@ -4,21 +4,21 @@
     {
       "id": 1,
       "prompt": "Use `agent-browser` to analyze `https://www.notion.so/product`, but do not stop at the product page. Crawl a few supporting pages on the same site such as pricing, solutions, templates, or customer proof pages, then propose up to 4 distinct personas who might care about Notion. Rank them as Primary, Secondary, or Speculative, and include observed signals, reasonable inferences, open questions, top deal-breaker, and why each persona is distinct from the others. Do not create persona skills yet; wait for my approval.",
-      "expected_output": "A concise multi-page site analysis followed by a curated persona set with priority labels, evidence anchors, distinctiveness checks, and an explicit request for approval before creating any `persona-*` skills.",
+      "expected_output": "A concise multi-page site analysis followed by a curated persona set with StoriesOnBoard-style Persona Card fields (role/group, challenges, goals, company/branch, interests), priority labels, evidence anchors, distinctiveness checks, and an explicit request for approval before creating any `persona-*` skills.",
       "files": [],
       "expectations": []
     },
     {
       "id": 2,
       "prompt": "Use `https://www.headspace.com/` as the entry point, then inspect several relevant supporting pages on the same site before proposing up to 3 personas most likely to sign up. Each persona should look like a real product persona rather than a shallow segment, but avoid decorative demographics unless the site supports them. Include observed signals, reasonable inferences, open questions, and merge any personas that are too similar. Pause for approval instead of creating skills immediately.",
-      "expected_output": "A smaller curated persona set with rationale tied to multiple pages on the site, clear evidence anchors, reduced duplication, and a clear pause for approval.",
+      "expected_output": "A smaller curated persona set with complete Persona Card fields per StoriesOnBoard, rationale tied to multiple pages on the site, clear evidence anchors, reduced duplication, and a clear pause for approval.",
       "files": [],
       "expectations": []
     },
     {
       "id": 3,
       "prompt": "We already approved these personas for `https://stripe.com/billing`: a finance operations lead at a SaaS company, a startup founder handling billing alone, and a developer evaluating subscription infrastructure. Create one reusable skill for each approved persona in the same agent skills directory where `persona-creator` is installed, using the `persona-` prefix. Each generated skill should include boundaries for when to use or not use it, plus an evidence anchors section separating observed signals from inference and assumptions.",
-      "expected_output": "Three new `persona-*` skill files in the user's agent skills directory, each usable later as a distinct research lens with clear boundaries and evidence anchors.",
+      "expected_output": "Three new `persona-*` skill files in the user's agent skills directory, each with a `## Persona Card` section (role/group, challenges, goals, company/branch or N/A), plus boundaries and evidence anchors, usable later as distinct research lenses.",
       "files": [],
       "expectations": []
     }

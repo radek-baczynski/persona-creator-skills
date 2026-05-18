@@ -2,7 +2,7 @@
 name: persona-creator
 description: Create rich buyer or user personas from a real website, then turn approved personas into reusable persona-* skills. Use whenever the user wants personas, ICPs, customer segments, buyer profiles, or audience hypotheses from a URL. Also use when the user wants you to browse a site, crawl supporting pages, propose human-feeling personas, and generate reusable persona skills for research, messaging, testing, or critique.
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # persona-creator
@@ -109,12 +109,14 @@ Do not let outside sources overpower the website itself. Website evidence remain
 
 ### 4. Turn evidence into candidate personas
 
-Use best-practice persona thinking:
+Read `references/persona-card-template.md` before inventing personas. Shape each candidate as a **persona card** per [StoriesOnBoard's persona card model](https://storiesonboard.com/blog/what-is-on-a-user-persona-card):
 
 - Persona value comes from helping future decisions, not from decorative detail.
-- Ground the persona in observed goals, frustrations, behaviors, and buying questions.
-- Humanize the persona enough that it feels memorable and usable.
-- Do not pad personas with random hobbies or stereotypes.
+- Start with **persona group** (B2C) or **job role** (B2B) — the card's required anchor field.
+- Ground challenges, goals, and role in observed site evidence.
+- Humanize with name and optional avatar description; add age, location, or education only when site or user supports them.
+- Use **interests and hobbies** for discovery channels and media (where they encounter products), not random filler stereotypes.
+- Add **company and branch** for B2B when industry or company type helps segment; use `N/A` for pure B2C when appropriate.
 
 Propose personas as likely hypotheses, not proven facts. Separate observed facts, reasonable inferences, and uncertainty. Prefer 2 to 4 strong personas over a bloated list.
 
@@ -122,7 +124,7 @@ Before presenting personas, run a curation pass: merge near-duplicates, drop wea
 
 ### 5. Make each persona feel individual
 
-Each persona should read like a normal product or marketing persona. Give each persona a memorable name, role context, bio, goals, frustrations, behaviors, decision style, buying triggers, objections, trust signals, and a short quote.
+Each persona should read like a normal product or marketing persona card. Fill every StoriesOnBoard field in the template: name, avatar (text), role/group, challenges, goals, company/branch when relevant, interests (channels), plus buying context, behaviors, decision style, and a short quote.
 
 Do not accidentally localize the persona unless the site or user gives a reason.
 
@@ -147,18 +149,28 @@ Use this structure:
 ### 1. `persona-...`
 - Priority: Primary | Secondary | Speculative
 - Persona label:
+
+#### Persona Card
+- Name:
+- Avatar:
+- Age / location / education: (optional; observed or inferred)
+- Persona group or job role:
 - Archetype:
-- Bio:
-- Mindset / personality:
+- Short bio:
+- Challenges / pain points:
+- Goals and benefits:
+- Company and branch:
+- Interests and hobbies: (channels / communities / media)
+- Current behaviors / workarounds:
+- Buying context:
+  - Buying triggers:
+  - Objections:
+  - Trust signals:
+- Temperament / decision style:
 - Quote:
+
+#### Evidence and fit
 - Why this persona is plausible:
-- Goals:
-- Frustrations:
-- Current workarounds or behaviors:
-- Decision style:
-- Buying triggers:
-- Objections:
-- Trust signals they need:
 - What they would care about on this site:
 - Primary job-to-be-done:
 - Top deal-breaker:
@@ -182,12 +194,12 @@ For each approved persona:
 - confirm again that `skill-creator` or an equivalent skill-authoring workflow is available
 - create `persona-<slug>/SKILL.md` in the user's agent skills directory (same location as this skill)
 - keep the `persona-` prefix and lowercase kebab-case slugs
-- read `references/persona-skill-template.md` in this skill folder for the full template and naming guidance
+- read `references/persona-card-template.md` and `references/persona-skill-template.md` in this skill folder
 - avoid creating two skills that are nearly the same persona with different labels
 
 ### 10. Generate each persona skill as a reusable research lens
 
-Each generated persona skill should include YAML frontmatter, persona snapshot, boundaries, evidence anchors, how to work, and output shape. See `references/persona-skill-template.md` for the complete template.
+Each generated persona skill must include YAML frontmatter, a full **Persona Card** section (all StoriesOnBoard fields), boundaries, evidence anchors, how to work, and output shape. See `references/persona-card-template.md` for field definitions and `references/persona-skill-template.md` for the complete skill structure.
 
 Generated personas are **not** frozen snapshots. They keep a stable lens (who this person is, what they care about) and should still use `agent-browser` to crawl or explore whenever the user supplies a URL or asks to review a page.
 
@@ -200,6 +212,7 @@ A good run of this skill:
 - ranks personas by priority
 - shows what is observed versus inferred
 - asks for approval before creating persona skills
+- fills each persona with a complete StoriesOnBoard-style persona card (role/group first, then challenges, goals, company/branch, interests)
 - creates skills that keep a stable persona lens in later chats while still allowing crawl and exploration of new URLs when the user asks
 - keeps uncertainty visible
 

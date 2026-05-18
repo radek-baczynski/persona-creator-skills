@@ -176,8 +176,10 @@ See [`examples/personas/`](examples/personas/) for sample persona skills produce
 Each skill in this repo is a folder under `skills/`:
 
 - `SKILL.md` — instructions and workflow
-- `references/` — supporting docs (persona skill template)
+- `references/` — supporting docs (`persona-card-template.md` per [StoriesOnBoard's persona card model](https://storiesonboard.com/blog/what-is-on-a-user-persona-card), plus `persona-skill-template.md` for generated `persona-*` skills)
 - `evals/` — eval cases for quality testing
+
+Generated `persona-*` skills include a **Persona Card** section with name, role/group, challenges, goals, company/branch, and interests (discovery channels), aligned with that reference.
 
 ## Releases
 

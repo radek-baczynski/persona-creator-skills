@@ -25,7 +25,7 @@ Most of the personas here started that way — especially [persona-solo-creator]
 | [persona-psychologist-interview-analysis](personas/persona-psychologist-interview-analysis/) | Clinical or research interviews; nuance and careful wording over speed theater. |
 | [persona-phone-call-reviewer](personas/persona-phone-call-reviewer/) | Sales, advisory, or support calls — wants action items and what was actually agreed. |
 
-Each `SKILL.md` includes a short bio, what they want, what annoys them, and what on a website would earn or lose their trust.
+Each `SKILL.md` includes a [StoriesOnBoard-style persona card](https://storiesonboard.com/blog/what-is-on-a-user-persona-card) (role/group, challenges, goals, company/branch, interests) plus boundaries and evidence anchors for research-style critique.
 
 ## Try one in conversation
 
